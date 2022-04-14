@@ -37,7 +37,7 @@ a { text-decoration: none; }
 
 h1 a {
     background-color: black;
-    color: crimson;
+    color: whitesmoke;
     border-radius: 5px;
     padding: 0.3rem 1rem;
 }
@@ -49,6 +49,9 @@ header {
     /* Deixar o cabeçalho fixo */
     position: sticky;
     top: 0;
+    /* ajuste a profundidade (eixo x)
+    quanto maior, mais a frente fica */
+    z-index: 1000;
 }
 
 /* Regra para um elemento (no caso, uma div) com
@@ -109,6 +112,7 @@ nav h2 a:focus,
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: whitesmoke;
 }
 
 /* Esta regra somente irá funcionar
