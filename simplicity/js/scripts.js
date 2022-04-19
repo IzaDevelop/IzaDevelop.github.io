@@ -1,3 +1,4 @@
+/* JS INICIAL PARA CEP/ENDEREÇO */
 const formulario = document.querySelector("form");
 const inputCep = formulario.querySelector("#cep");
 const inputTelefone = formulario.querySelector("#telefone");
@@ -43,3 +44,35 @@ https://github.com/vanilla-masker/vanilla-masker */
 
 VMasker(inputCep).maskPattern("99999-999");
 VMasker(inputTelefone).maskPattern("(99) 9999-9999");
+
+/* JS INICIAL PARA MENSAGEM, programação do contador de caracteres do campo mensagem*/
+const spanMaximo = formulario.querySelector("#maximo");
+const bCaracteres = formulario.querySelector("#caracteres");
+const textMensagem = formulario.querySelector("#mensagem");
+
+/* determinar a quantidade máxima de caracteres do campo mensagem */
+let quantidade = 500;
+
+/* evento para detectar a digitação (entrada) no campo mensagem */
+textMensagem.addEventListener("input", function(){
+    /* capturando o que foi digitado */
+    let conteudo = textMensagem.value;
+
+    /* criando a contagem regressiva */
+    let contagem = quantidade - conteudo.length;
+
+    /* adicionando a contagem ao elemento HTML */
+    bCaracteres.innerHTML = contagem;
+
+    /* desafio: 
+    se for 0, vermelho 
+    e não, preto*/
+
+    if (contagem == 0) {
+        bCaracteres.style.color = "red";
+        textMensagem.style.boxShadow = "red 0 2px 10px"
+    } else {
+        bCaracteres.style.color = "black";
+        textMensagem.style.boxShadow = "black 0 2px 10px"
+    }
+});

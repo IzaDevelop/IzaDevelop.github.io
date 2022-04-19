@@ -324,6 +324,10 @@ textarea {
     height: auto;
 }
 
+.alerta {
+    box-shadow: red 1px 2px 5px;
+}
+
 button {
     background-color: #121212;
     color: whitesmoke;

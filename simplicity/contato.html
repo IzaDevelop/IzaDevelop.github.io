@@ -101,9 +101,11 @@
                     </select>
                 </div>
                 <div>
-                    <label for="mensagem">Mensagem</label> 
+                    <label for="mensagem">Mensagem: 
+                    <span id="maximo"> (restam <b id="caracteres">500</b> caracteres)</span>
+                    </label>
                     <br>
-                    <textarea name="mensagem" id="mensagem" cols="20" rows="5"></textarea>
+                    <textarea name="mensagem" id="mensagem" maxlength="500" cols="20" rows="5"></textarea>
                 </div>
                 <button type="submit">Enviar dados</button>
                 <!-- outra forma
