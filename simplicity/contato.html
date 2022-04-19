@@ -7,7 +7,7 @@
     <title>Contato - Simplicity</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -69,6 +69,28 @@
                     <label for="programação">Programação</label>
                 </div>
                 <div>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" required>
+                    <button id="localizar-cep">Localizar</button>
+                    <b id="status"></b>
+                </div>
+                <div>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" size="30">
+                </div>
+                <div>
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" id="bairro" name="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado">
+                </div>
+                <div>
                     <label for="assunto">Assunto</label>
                     <select name="assunto" id="assunto">
                         <option></option> 
@@ -93,6 +115,8 @@
         <p>Simplicity é um site fictício desenvolvido educacionalmente
         <br>Senac Penha - 2022 </p>
     </footer>
+    <script src="js/vanilla-masker.min.js"></script><!-- importação da lib (obs.: deve vir primeiro) -->
     <script src="js/menu.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

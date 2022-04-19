@@ -43,7 +43,7 @@ h1 a {
 }
 
 header { 
-    background-color: white; 
+    background-color: #fff; 
     text-transform: uppercase; 
     
     /* Deixar o cabeçalho fixo */
@@ -141,7 +141,7 @@ com o auxílio de programação JavaScript */
 
 .destaque {
     background-image: url(../imagens/fundo-destaque.jpg);
-    color: white;
+    color: whitesmoke;
     height: 90vh;
 
     background-size: cover;
@@ -184,11 +184,11 @@ o flex-wrap não funciona */
     /* Sintaxe COMPLETA */
     /* animation-name: aparecer;
     animation-duration: 3s;
-    animation-delay: 2s;
+    animation-delay: 1ms;
     animation-fill-mode: backwards; */
 
     /* Sintaxe ABREVIADA */
-    animation: aparecer 3s 2s backwards;
+    animation: aparecer 3s 1ms backwards;
 }
 
 
@@ -222,7 +222,7 @@ article p { padding: 0.5rem 0; }
 }
 
 .historia h2 {
-    color: white;
+    color: whitesmoke;
     text-shadow: black 1px 1px 5px;
 }
 
@@ -233,7 +233,7 @@ article p { padding: 0.5rem 0; }
 
 footer {
     background-color: black;
-    color: white;
+    color: whitesmoke;
     height: 15vh;
     font-weight: bold;
     display: flex;
@@ -245,7 +245,7 @@ footer {
 
 /* Regras para o conteúdo das páginas: Produtos, Serviços e Contato */
 .conteudo {
-    background-color: rgb(236, 236, 236);
+    background-color: whitesmoke;
     padding: .7rem; /* ou 0.7rem */
     border-radius: 7px;
 }
@@ -275,7 +275,7 @@ caption {
 
 th {
     background-color: black;
-    color: white;
+    color: whitesmoke;
     font-size: 1.3rem;
     padding: .5rem;
 }
@@ -326,7 +326,7 @@ textarea {
 
 button {
     background-color: #121212;
-    color: #fff;
+    color: whitesmoke;
     border: none;
     padding: 1rem;
     font-weight: bold;
