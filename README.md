@@ -8,3 +8,6 @@ Curso de programador web.
 - HTML
 - CSS 
 - JavaScript
+
+### Back-End
+- PHP e MySQL
