@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Projeto Traveller - Cadastro de Pontos Turísticos</h2>
+        <form name="dados" id="dados" action="." method="post">
+            <div class="campos">
+            <hr>
+                <label for="nome">Nome do Ponto Turístico</label>
+                <input type="text" id="nome" placeholder="ex: Pinacoteca" autofocus required>
+            </div>
+            <hr>
+            <h3>Localização:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="rua">Rua</label>
+                    <label for="numero">Número</label>
+                    <label for="bairro">Bairro</label>
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="rua" required placeholder="ex: Av. Paulista">
+                    <input type="number" id="numero" required placeholder="ex: 1234">
+                    <input type="text" id="bairro" required placeholder="ex: Cerqueira Cesar">
+                </div>
+            </div>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="cep">Cep</label>
+                    <label for="cidade">Cidade</label>
+                    <label for="estados">Estado</label>
+                </div>
+                <div class="em__linha">
+                    <input type="number" id="cep" required placeholder="ex: 12345-678">
+                    <input type="text" id="cidade" required placeholder="ex: São Paulo">
+                    <input list="uf" id="estados" class="lista" required placeholder="ex: Selecione o estado">
+                    <datalist id="uf">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="EX">Estrangeiro</option>
+                    </datalist>
+                </div>
+            </div>
+            <hr>
+            <h3>Meio de transporte:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="transportepublico">Transporte público</label>
+                    <label for="transporteprivado">Transporte privado</label>
+                    <label for="valor">Valor da passagem</label>
+                </div>
+                <div class="em__linha">
+                <input list="transportepub" id="transportepublico" class="lista" required placeholder="ex: Selecione o meio">
+                <datalist id="transportepub">
+                    <option>Ônibus</option>
+                    <option>Trem</option>
+                    <option>Metrô</option>
+                    <option>Nenhum</option>
+                </datalist>
+                <input list="transportepriv" id="transporteprivado" class="lista" required
+                        placeholder="ex: Selecione a classificação">
+                    <datalist id="transportepriv">
+                        <option>Carro</option>
+                        <option>Avião</option>
+                        <option>Barco</option>
+                        <option>Nenhum</option>
+                    </datalist>
+                <input type="number" id="passagem" required placeholder="ex: 4">
+                </div>
+            </div>
+            <hr>
+            <h3>Alimentação:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="restaurante">Restaurante</label>
+                    <label for="culinaria">Culinária</label>
+                    <label for="classifica">Classificação</label>
+                </div>
+                <div class="em__linha">
+                    <input type="text" id="restaurante" required placeholder="ex: Coco Bambu">
+                    <input list="comida" id="culinaria" class="lista" required placeholder="ex: Selecione a culinária">
+                    <datalist id="comida">
+                        <option>Fast food</option>
+                        <option>Brasileira</option>
+                        <option>Árabe</option>
+                        <option>Italiana</option>
+                        <option>Japonesa</option>
+                        <option>Mexicana</option>
+                        <option>Vegana</option>
+                        <option>Vegetariana</option>
+                    </datalist>
+                    <input list="classificação" id="classifica" class="lista" required
+                        placeholder="ex: Selecione a classificação">
+                    <datalist id="classificação">
+                        <option value="1 estrela"></option>
+                        <option value="2 estrelas"></option>
+                        <option value="3 estrelas"></option>
+                        <option value="4 estrelas"></option>
+                        <option value="5 estrelas"></option>
+                    </datalist>
+                </div>
+            </div>
+            <hr>
+            <h3>Hospedagem</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="valor">Valor da diária</label>
+                    <label for="telefone">Telefone</label>
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="em__linha">
+                    <input type="number" id="dvalor" required placeholder="ex: 200.00">
+                    <input type="tel" id="telefone" required placeholder="ex: 00-1234-5678">
+                    <input type="email" id="email" required placeholder="ex: hotel@hotel.com">
+                </div>
+            </div>
+            <hr>
+            <h3>Melhor época para visitar:</h3>
+            <div class="check">
+                <label for="estaçãopri">Primavera</label>
+                 <input type="checkbox" id="estaçãopri" name="primavera">
+            </div>
+            <div class="check">
+                <label for="estaçãove">Verão</label>
+                <input type="checkbox" id="estaçãove" name="verao">
+            </div>
+            <div class="check">
+                <label for="estaçãoou">Outono</label>
+                <input type="checkbox" id="estaçãoou" name="outono">
+            </div>
+            <div class="check">
+                <label for="estaçãoin">Inverno</label>
+                <input type="checkbox" id="estaçãoin" name="inverno">
+            </div>
+            <hr>
+            <h3>Passeio:</h3>
+            <div class="campos">
+                <div class="em__linha">
+                    <label for="atividade">Atividade</label>
+                    <label for="pessoas">Quantas pessoas</label>
+                    <label for="valor">Valor</label>
+                </div>
+                <div class="em__linha">
+                    <input list="atividades" id="atividade" class="lista" required placeholder="ex: Selecione a atividade">
+                    <datalist id="atividades">
+                        <option>Museu</option>
+                        <option>Festival</option>
+                        <option>Show</option>
+                        <option>Trilha</option>
+                        <option>Rapel</option>
+                        <option>Paraquedismo</option>
+                    </datalist>
+                    <input type="number" id="pessoas" required placeholder="ex: 2">
+                    <input type="number" id="valor" required placeholder="ex: 200.00">
+                </div>
+            </div>
+            <div class="campos">
+                <label for="informacoes">Mais informações</label>
+                <textarea name="text" id="informacoes" placeholder="Informações adicionais"></textarea>
+            </div>
+            <div class="botoes">
+                <input type="submit" value="Gravar Ponto">
+            </div>
+        </form>
+    </div>
+</html>

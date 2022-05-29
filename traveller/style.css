@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400&family=Open+Sans:wght@300;400&family=Poppins:wght@100;200;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'poppins', sans-serif;
+    font-size: 30px;
+    background-color: #fba6ff91;background-image: url(viagem.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #7353BA;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFAFA90;
+}
+
+h2,
+h3 {
+    margin: 10px 10px 0;
+    color: #F71735;
+    font-weight: 900;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin: 20px 10px;
+    border: 1px solid #7353BA;
+}
+
+.campos {
+    color: #7353BA;
+    margin: 5px auto;
+    padding: 10px;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.campos label {
+    margin: 5px 0;
+    font-weight: 900;
+    color: #0F1020;
+}
+
+input,
+textarea {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    font-family: 'poppins', sans-serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.em__linha {
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.em__linha label,
+.em__linha input {
+    width: 30%;
+    margin: 0 2px;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    outline: none;
+    border: 1px solid #0F1020;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.botoes {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.botoes input {
+    width: 200px;
+    height: 50px;
+    font-family: 'poppins', sans-serif;
+    font-size: 25px;
+    border: 0;
+    background-color: #F71735;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.check label{
+    padding-left: 50px;
+    position: absolute;
+}
