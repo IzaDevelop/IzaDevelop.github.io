@@ -112,7 +112,6 @@ nav h2 a:focus,
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: whitesmoke;
 }
 
 /* Esta regra somente irá funcionar
@@ -136,6 +135,7 @@ com o auxílio de programação JavaScript */
     position: absolute;
     right: 0;
     left: 0;
+    background-color: whitesmoke;
 }
 
 
@@ -343,6 +343,10 @@ button{
 
 img {
     border-radius: 5px;
+}
+
+a {
+    color: #fff;
 }
 
 @media screen and (min-width: 530px) {
