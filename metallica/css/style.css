@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;800&family=Comfortaa:wght@300;400;600&family=Mulish:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Comfortaa', 'Baloo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+body, h1, h2, h3, p, figure {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-transform: uppercase;
+    background-color: #212320;
+}
+
+header .limitador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.limitador {
+    max-width: 1000px;
+    margin: auto;
+    width: 95%;
+}
+
+.destaque {
+    background-image: url(../imagens/destaque.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.destaque img {
+    height: 20%;
+}
+
+main {
+    padding-bottom: 5px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    word-spacing: 5px;
+    font-size: 1.5rem;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    transition: 1.5s;
+    color: #7f76e6;
+}
+
+button {
+    border: none;
+    color: #fff;
+    background-color: #272262;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 50px;
+}
+
+button:hover {
+    transition: 1.5s;
+    background-color: #4136b8;
+    cursor: pointer;
+}
+
+.botao {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2, p{
+    padding: 5px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+ul, li{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+figure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure img {
+    margin: 5px;
+    border-radius: 20%;
+    max-width: 150px;
+}
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    background-color: #212320;
+}
+
+em {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.questionario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #212320;
+    border-radius: 20px;
+}
+
+.question{
+	font-weight: 600;
+}
+
+.answers {
+    margin-bottom: 15px;
+}
+
+#submit{
+	font-size: 1.3rem;
+	background-color: #272262;
+	color: #fff;
+	border: 0px;
+	border: 50px;
+	padding: 10px;
+	cursor: pointer;
+	margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#submit:hover{
+	background-color: #7f76e6;
+}
+
+@media screen and (max-width: 399px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:830px) {
+    em {
+        text-align: center;
+    }
+
+    .questionario {
+        padding: 10px;
+    }
+}    

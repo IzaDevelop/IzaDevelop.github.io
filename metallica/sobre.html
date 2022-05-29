@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="./css/style-sobre.css">
+    <link rel="stylesheet" href="./javascript/slick/slick.css">
+    <link rel="stylesheet" href="./javascript/slick/slick-theme.css">
+</head>
+<body>
+    <header>
+        <div class="limitador">
+            <h1><a href="index.html">Metallica</a></h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="agenda.html">Agenda</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <article class="limitador">
+            <h2>História da Banda</h2>
+            <h3>A história dessa ilustre banda começa em Los Angeles, em 1981, quando Lars Ulrich e James Hatfield resolvem formar a banda, colocando um anúncio no jornal Recycler, de Los Angeles.</h3>
+            <h3>Em 14 de março de 1982 acontece o primeiro show da história do Metallica no Radio City, em Anaheim no Sul da Califórnia.</h3>
+            <h3>A primeira música do show foi "Hit The Lights", além de duas músicas próprias, a banda tocou covers de bandas como Diamond Head e Savege, em um show de nove canções.</h3>
+            <em>As músicas tocadas foram:</em>
+            <ol>
+                <li>Hit The Lights</li>
+                <li>Blitzkrieg - Blitzkrieg cover</li>
+                <li>Helpless - Diamond Head cover</li>
+                <li>Jump In The Fire</li>
+                <li>Let It Loose - Savege cover</li>
+                <li>Sucking My Love - Diamond Head cover</li>
+                <li>Am I Evil? - Diamond Head cover</li>
+                <li>The Prince - Diamond Head cover</li>
+                <li>Killing Time - Sweet Savage cover</li>
+            </ol>
+            <hr>
+            <em>Integrantes Atuais</em>  
+            <div class="slider">
+                <img src="imagens/james-hatfield.png" alt="James Hatfield">
+                <img src="imagens/lars-ulrich.png" alt="Lars Ulrich">
+                <img src="imagens/krik-hammett.jpg" alt="Krik Hammett">
+                <img src="imagens/rob-trujillo.jpg" alt="Rob Trujillo">
+            </div>
+            <ul>
+                <li>James Hatfield, guitarrista e vocalista </li>
+                <li>Lars Ulrich, baterista</li>
+                <li>Krik Hammett, guitarrista</li>
+                <li>Rob Trujillo, baixista</li>
+            </ul>
+            <hr>
+            <em>Antigos Integrantes</em>
+            <div class="slider">
+                <img src="imagens/jason-newsted.jpg" alt="Jason Newsted">
+                <img src="imagens/cliff-burton.gif" alt="Cliff Burton">
+                <img src="imagens/dave-mustaine.webp" alt="Dave Mustaine">
+                <img src="imagens/ron-mcgovney.jpg" alt="Ron McGovney">
+            </div>
+            <ul>
+                <li>Jason Newsted, baixista
+                <br>
+                (Deixou a banda em janeiro de 2001; 1987-2001)
+                </li>
+                <li>Cliff Burton, baixista
+                <br>
+                (Morreu em um acidente de ônibus em 1986; 1983-1986)
+                </li>
+                <li>Dave Mustaine, guitarrista
+                <br>
+                (Expulso da banda por problemas com drogas e álcool em 1983; 1982-1983)
+                </li>
+                <li>Ron McGovney, baixista
+                <br>
+                (Não tinha interesse na carreira musical e saiu da banda em 1983; 1982-1983)
+                </li>
+            </ul>
+        </article>
+    </main>
+    <footer>
+        <p>Desenvolvido por Izabelle</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./javascript/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 1800
+            });
+        });
+    </script>
+</body>
+</html>

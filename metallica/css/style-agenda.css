@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;800&family=Comfortaa:wght@300;400;600&family=Mulish:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap');
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Comfortaa', 'Baloo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    font-size: 15px;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-transform: uppercase;
+    background-color: #212320;
+    height: 10vh;
+}
+
+header .limitador {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.limitador {
+    max-width: 1000px;
+    margin: auto;
+    width: 95%;
+}
+
+main {
+    padding: 5px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+nav {
+    word-spacing: 5px;
+    font-size: 1.5rem;
+}
+
+a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    transition: 1.5s;
+    color: #7f76e6;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+table, th, tr, td {
+    border: 1px solid;
+}
+
+table {
+    width: 95%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+caption {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+tr {
+    height: 30px;
+    text-align: center;
+}
+
+tr:hover {
+    color: whitesmoke;
+    background-color: #212320;
+}
+
+td {
+    padding: 5px;
+    text-align: justify;
+    vertical-align: middle;
+}
+
+footer {
+    text-align: center;
+    color: whitesmoke;
+    background-color: #212320;
+}
+
+@media screen and (max-width: 399px) {
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    nav {
+        font-size: 1.3rem;
+    }
+}
