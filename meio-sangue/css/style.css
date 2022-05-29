@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;800&family=Comfortaa:wght@300;400;600&family=Mulish:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Comfortaa',  'Segoe UI', Verdana, sans-serif;
+}
+
+body {
+    color: #000;
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../imagem/capa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    background-color: #1e1e2a;
+    height: 55px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px; 
+    width: 33.33%;
+}
+
+nav a:hover {
+    background-color: #272262;
+}
+
+section {
+    background-color: #FFFAFA70;
+    height: 100vh;
+    width: 100%;
+    padding: 150px;
+    text-align: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 50px;
+}
+
+.subtitulo {
+    font-size: 30px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border: none;
+    background-color: #272262;
+    padding: 20px;
+    font-size: 20pt;
+    margin-top: 20px;
+    border-radius: 30px;
+}
+
+button a {
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: 2s;
+    background-color: #4136b8;
+    color: #fff;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p {
+    margin: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: justify;
+}

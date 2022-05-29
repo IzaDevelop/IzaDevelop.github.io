@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;800&family=Comfortaa:wght@300;400;600&family=Mulish:wght@200;300;400;500&family=Poppins:ital,wght@0,100;0,400;1,200&display=swap');
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', 'Comfortaa',  'Segoe UI', Verdana, sans-serif;
+}
+
+body {
+    color: #000;
+}
+
+nav {
+    display: flex;
+    background-color: #1e1e2a;
+    height: 55px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px; 
+    width: 33.33%;
+}
+
+nav a:hover {
+    background-color: #272262;
+}
+
+h1 {
+    margin-top: 10px;
+    padding: 5px 30px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h2 {
+    margin-top: 10px;
+    padding: 5px 30px;
+    text-align: left;
+    font-size: 40px;
+}
+
+p {
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-indent: 50px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    filter: grayscale(100%);
+    max-width: 100%;
+}
+
+img:hover {
+    transition: 2s;
+    filter: grayscale(0%);
+}
