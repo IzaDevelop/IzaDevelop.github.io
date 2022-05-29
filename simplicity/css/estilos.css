@@ -337,6 +337,14 @@ button{
     border-radius: 10px;
 }
 
+#galeria-de-fotos { 
+    text-align: center; 
+}   
+
+img {
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 530px) {
     nav { width: 70%; }
     nav h2 { display: none; }
@@ -349,4 +357,3 @@ button{
     header .limitador { height: 15vh; }
     .destaque { height: 85vh; }
 }
-

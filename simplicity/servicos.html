@@ -8,7 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
+    <link href="lightbox/css/lightbox.min.css" rel="stylesheet"/>
 
     <link rel="stylesheet" href="css/estilos.css">
 </head>
@@ -39,21 +41,20 @@
             <p>Ea possimus aut facilis incidunt natus dolorem accusantium impedit expedita cupiditate voluptatum doloremque, sint esse voluptatem voluptate quasi fugit minus eos. Perspiciatis, excepturi ipsam fuga asperiores ducimus dolores quam. Tempore!</p>
             <p>Incidunt illum, voluptatem reprehenderit quibusdam minus temporibus rem fugiat odit earum ipsum ratione excepturi quasi fugit suscipit libero, recusandae repellat culpa. Aspernatur natus omnis ad aperiam magnam suscipit, praesentium quasi.</p>
             
-            <figure>
-                <a href="imagens/desenvolvimento-web.jpg">
+            <div id="galeria-de-fotos">
+                <a href="imagens/desenvolvimento-web.jpg" data-lightbox="galeria" data-title="Desenvolvimento Web">
                     <img src="imagens/desenvolvimento-web-mini.jpg" alt="">
                 </a>
-                <a href="imagens/design-grafico.jpg">
+                <a href="imagens/design-grafico.jpg" data-lightbox="galeria" data-title="Design Gráfico">
                     <img src="imagens/design-grafico-mini.jpg" alt="">
                 </a>
-                <a href="imagens/marketing-digital.jpg">
+                <a href="imagens/marketing-digital.jpg" data-lightbox="galeria" data-title="Marketing Digital">
                     <img src="imagens/marketing-digital-mini.jpg" alt="">
                 </a>
-                <a href="imagens/consultoria-treinamento.jpg">
+                <a href="imagens/consultoria-treinamento.jpg" data-lightbox="galeria" data-title="Consultoria">
                     <img src="imagens/consultoria-treinamento-mini.jpg" alt="">
                 </a>
-            </figure>
-
+            </div>
         
         </article>
         
@@ -63,6 +64,15 @@
         <p>Simplicity é um site fictício desenvolvido educacionalmente
         <br>Senac Penha - 2022 </p>
     </footer>
+
     <script src="js/menu.js"></script>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="lightbox/js/lightbox.min.js"></script>
+    <script>
+        lightbox.option({
+            'albumLabel': 'Foto %1 de %2'
+        });
+    </script>
 </body>
 </html>
