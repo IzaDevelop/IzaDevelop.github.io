@@ -80,4 +80,13 @@ img:hover {
     html {
         font-size: 14px;
     }
+
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    nav a {
+        margin: 5px;
+    }
 }
