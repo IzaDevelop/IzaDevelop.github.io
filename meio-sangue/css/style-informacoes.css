@@ -13,22 +13,22 @@ body {
 
 nav {
     display: flex;
+    justify-content: space-evenly;
     background-color: #1e1e2a;
-    height: 55px;
+    height: 10vh;
 }
 
 nav a {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: none;
     text-align: center;
     color: #fff;
     font-weight: bold;
-    padding: 15px 30px; 
-    width: 33.33%;
+    padding-top: 2vh; 
 }
 
 nav a:hover {
-    background-color: #272262;
+    color: #635ac7;
 }
 
 h1 {
