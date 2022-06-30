@@ -67,6 +67,14 @@ div {
     justify-content: center;
 }
 
+.sub img {
+    max-width: 50px;
+    position: fixed;
+    top: 90vh;
+    right: 10px;
+    z-index: 1000;
+}
+
 button {
     border: none;
     background-color: #272262;
@@ -127,5 +135,9 @@ p {
 
     nav a {
         margin: 5px;
+    }
+
+    section {
+        height: 100%;
     }
 }
