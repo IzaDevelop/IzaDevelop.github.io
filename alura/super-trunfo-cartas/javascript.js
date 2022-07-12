@@ -1,4 +1,4 @@
-var cartaPaulo = {
+var carta1 = {
     nome: "Shiryu de dragão",
     imagem:
       "http://pm1.narvii.com/6399/96fdb9d4fe6a9e72b9bc60ad418e3c43795e53b4_00.jpg",
@@ -9,7 +9,7 @@ var cartaPaulo = {
     }
   };
   
-  var cartaRafa = {
+  var carta2 = {
     nome: "Bulbasauro",
     imagem: "https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png",
     atributos: {
@@ -19,7 +19,7 @@ var cartaPaulo = {
     }
   };
   
-  var cartaGui = {
+  var carta3 = {
     nome: "Darth Vader",
     imagem:
       "https://images-na.ssl-images-amazon.com/images/I/41i-0NH0q9L._SX328_BO1,204,203,200_.jpg",
@@ -32,8 +32,7 @@ var cartaPaulo = {
   
   var cartaMaquina;
   var cartaJogador;
-  var cartas = [cartaPaulo, cartaRafa, cartaGui];
-  // 0          1           2
+  var cartas = [carta1, carta2, carta3];
   
   function sortearCarta() {
     var numeroCartaMaquina = parseInt(Math.random() * 3);
@@ -87,7 +86,6 @@ var cartaPaulo = {
   function exibirCartaJogador() {
     var divCartaJogador = document.getElementById("carta-jogador");
     divCartaJogador.style.backgroundImage = `url(${cartaJogador.imagem})`;
-    // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
     var moldura =
       '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
     var tagHTML = "<div id='opcoes' class='carta-status'>";
@@ -111,7 +109,6 @@ var cartaPaulo = {
   function exibirCartaMaquina() {
     var divCartaMaquina = document.getElementById("carta-maquina");
     divCartaMaquina.style.backgroundImage = `url(${cartaMaquina.imagem})`;
-    // divCartaJogador.style.backgroundImage = "url(" + cartaJogador.imagem + ")"
     var moldura =
       '<img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent.png" style=" width: inherit; height: inherit; position: absolute;">';
     var tagHTML = "<div id='opcoes' class='carta-status'>";
