@@ -1,62 +1,60 @@
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "Roboto Mono", monospace;
-    min-height: 600px;
-    background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-03-mentalista.png");
-    background-color: #000000;
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-  }
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 600px;
+  background-color: #000000;
+  color: #ffffff;
+}
   
-  .container {
-    text-align: center;
-    padding: 20px;
-    height: 100vh;
-  }
-  
-  .page-title {
-    color: #ffffff;
-    margin: 0 0 5px;
-  }
-  
-  .page-subtitle {
-    color: #ffffff;
-    margin-top: 16px;
-  }
-  
-  .page-logo {
-    width: 200px;
-  }
-  
-  .alura-logo {
-    width: 40px;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-  }
-  
-  @media (max-height: 500px) {
-    body {
-      min-height: 800px;
-    }
-  }
-  
-  input {
-    margin: 4px;
-    padding: 6px;
-    border-radius: 5px;
-  }
-  
-  button {
-    margin-top: 12px;
-    padding: 4px 8px;
-    border-radius: 10px;
-    background: #ffffff;
-  }
-  
-  .resultado {
-    color: #ffffff;
-    text-align: center;
-    margin-top: 16px;
-  }
-  
+.container {
+  text-align: center;
+  padding: 20px;
+  height: 100vh;
+  background-image: url("https://st1.uvnimg.com/dims4/default/993ea57/2147483647/thumbnail/480x270/quality/75/?url=https%3A%2F%2Fuvn-brightspot.s3.amazonaws.com%2Fassets%2Fvixes%2Fc%2Fcharles-xavier-comics.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+input { 
+  width: 20%;
+}
+
+input {
+  margin: 5px;
+  padding: 10px;
+  width: 60%;
+  border-radius: 15px;
+  border: none;
+  font-size: 1.3rem;
+}
+
+button {
+  border: none;
+  color: #ffffff;
+  background-color: slateblue;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.resultado {
+  text-align: center;
+  margin-top: 1rem;
+}
